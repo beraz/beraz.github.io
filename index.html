@@ -28,6 +28,8 @@
 
 
     <script>
+        $.mobile.loading("hide");
+        $.mobile.loading().hide();
         $(document).ready(function() {
             $("#carousel-produtos").swiperight(function() {
                 $(this).carousel('prev');
