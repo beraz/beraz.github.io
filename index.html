@@ -2,173 +2,178 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>.:Bernadete:.</title>
-    <link rel="shortcut icon" href="image/favicon.ico" />
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>.:Bernadete:.</title>
+   <link rel="shortcut icon" href="image/favicon.ico" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="libs/jquery/jquery.min.js"></script>
-    <script src="libs/jquery-mobile/jquery-mobile.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="libs/jquery/jquery.min.js"></script>
+   <script src="libs/jquery-mobile/jquery-mobile.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 
-    <script>
-        $.mobile.loading("hide");
-        $.mobile.loading().hide();
-        $(document).ready(function() {
-            $("#carousel-produtos").swiperight(function() {
-                $(this).carousel('prev');
-            });
-            $("#carousel-produtos").swipeleft(function() {
-                $(this).carousel('next');
-            });
-        });
-    </script>
+   <script>
+      $.mobile.loading("hide");
+      $.mobile.loading().hide();
+      $(document).ready(function() {
+         $("#carousel-produtos").swiperight(function() {
+            $(this).carousel('prev');
+         });
+         $("#carousel-produtos").swipeleft(function() {
+            $(this).carousel('next');
+         });
+         $("#closeModalTouch").tap(function() {
+            $("#modalPicture").modal("hide");
+         });
+      });
+   </script>
 
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- MODAL AREA -->
-    <div class="modal fade" id="modalPicture" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="">Bernadete Azevedo Serra</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="image/bel.jpg" class="modalImage" />
-                </div>
+   <!-- MODAL AREA -->
+   <div class="modal fade" id="modalPicture" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <div id="closeModalTouch">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+               <h4 class="modal-title" id="">Bernadete Azevedo Serra</h4>
             </div>
-        </div>
-    </div>
-
-    <!-- END MODAL AREA -->
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand navbar-brand-logo" href="#" style="padding:5px;" data-toggle="modal" data-target="#modalPicture">
-                    <div class="logo">
-                        <img src="image/bel.jpg" width="40px" height="40px" class="logo" />
-                    </div>
-                </a>
+            <div class="modal-body">
+               <img src="image/bel.jpg" class="modalImage" />
             </div>
+         </div>
+      </div>
+   </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#headerTitle" class="fa fa-home">Inicial</a></li>
-                    <li>
-                        <!--<a href="#section2">Sobre</a>-->
-                    </li>
+   <!-- END MODAL AREA -->
 
-                </ul>
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-brand-logo" href="#" style="padding:5px;" data-toggle="modal" data-target="#modalPicture">
+               <div class="logo">
+                  <img src="image/bel.jpg" width="40px" height="40px" class="logo" />
+               </div>
+            </a>
+         </div>
 
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="#headerTitle" class="fa fa-home">Inicial</a></li>
+               <li>
+                  <!--<a href="#section2">Sobre</a>-->
+               </li>
 
-    <div class="jumbotron" id="headerTitle">
-        <h1 data-toggle="modal" data-target="#modalPicture" style="cursor:pointer;">Bernadete Azevedo</h1>
-        <p>Revendedora</p>
-        <span class="label label-success fa fa-envelope">
+            </ul>
+
+         </div>
+         <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+   </nav>
+
+   <div class="jumbotron" id="headerTitle">
+      <h1 data-toggle="modal" data-target="#modalPicture" style="cursor:pointer;">Bernadete Azevedo</h1>
+      <p>Revendedora</p>
+      <span class="label label-success fa fa-envelope">
          beraz.serra@gmail.com
       </span>
-        <span class="label label-warning fa fa-building"> Salvador/ba</span>
-    </div>
+      <span class="label label-warning fa fa-building"> Salvador/ba</span>
+   </div>
 
-    <div id="section1" class="container-fluid">
-        <div id="carousel-produtos" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-produtos" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-produtos" data-slide-to="1"></li>
-                <li data-target="#carousel-produtos" data-slide-to="2"></li>
-                <li data-target="#carousel-produtos" data-slide-to="3"></li>
-            </ol>
+   <div id="section1" class="container-fluid">
+      <div id="carousel-produtos" class="carousel slide" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+            <li data-target="#carousel-produtos" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-produtos" data-slide-to="1"></li>
+            <li data-target="#carousel-produtos" data-slide-to="2"></li>
+            <li data-target="#carousel-produtos" data-slide-to="3"></li>
+         </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <a href="https://www.revistanatura.com.br/" target="_blank">
-                        <img src="image/natura.jpg" class="img-responsive" alt="">
-                        <div class="carousel-caption">
-                            <h3>Natura</h3>
-                            <p>Cosméticos e Tratamento para o corpo</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="http://www.avon.com.br/folheto-virtual" target="_blank">
-                        <img src="image/avon.jpg" class="img-responsive" alt="">
-                        <div class="carousel-caption">
-                            <h3>Avon</h3>
-                            <p>Cosméticos</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="http://www.flip3d.com.br/web/pub/catalogoshermes/index3/" target="_blank">
-                        <img src="image/hermes.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h3>Hermes</h3>
-                            <p>Produtos variados</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="item">
-                    <a href="http://demillus.vestemuitomelhor.com.br/revista-digital" target="_blank">
-                        <img src="image/demillus.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h3>Demillus</h3>
-                            <p>Moda íntima</p>
-                        </div>
-                    </a>
-                </div>
-
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner">
+            <div class="item active">
+               <a href="https://www.revistanatura.com.br/" target="_blank">
+                  <img src="image/natura.jpg" class="img-responsive" alt="">
+                  <div class="carousel-caption">
+                     <h3>Natura</h3>
+                     <p>Cosméticos e Tratamento para o corpo</p>
+                  </div>
+               </a>
             </div>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-produtos" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-produtos" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
-    </div>
+            <div class="item">
+               <a href="http://www.avon.com.br/folheto-virtual" target="_blank">
+                  <img src="image/avon.jpg" class="img-responsive" alt="">
+                  <div class="carousel-caption">
+                     <h3>Avon</h3>
+                     <p>Cosméticos</p>
+                  </div>
+               </a>
+            </div>
+
+            <div class="item">
+               <a href="http://www.flip3d.com.br/web/pub/catalogoshermes/index3/" target="_blank">
+                  <img src="image/hermes.jpg" alt="">
+                  <div class="carousel-caption">
+                     <h3>Hermes</h3>
+                     <p>Produtos variados</p>
+                  </div>
+               </a>
+            </div>
+
+            <div class="item">
+               <a href="http://demillus.vestemuitomelhor.com.br/revista-digital" target="_blank">
+                  <img src="image/demillus.jpg" alt="">
+                  <div class="carousel-caption">
+                     <h3>Demillus</h3>
+                     <p>Moda íntima</p>
+                  </div>
+               </a>
+            </div>
+
+         </div>
+
+         <!-- Controls -->
+         <a class="left carousel-control" href="#carousel-produtos" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a class="right carousel-control" href="#carousel-produtos" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+      </div>
+   </div>
 
 
-    <div id="section2" class="container-fluid">
+   <div id="section2" class="container-fluid">
 
-    </div>
+   </div>
 
 </body>
 

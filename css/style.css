@@ -70,3 +70,12 @@ body {
    width: 60%;
    margin: auto;
 }
+.close{
+   float: none !important;
+}
+#closeModalTouch{
+   height: 30px;
+   width: 30px;
+   float: right;
+   text-align: center;
+}
