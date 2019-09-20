@@ -2,170 +2,350 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>.:Bernadete:.</title>
-   <link rel="shortcut icon" href="image/favicon.ico" />
 
-   <!-- Bootstrap -->
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-   <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   <script src="libs/jquery/jquery.min.js"></script>
-   <script src="libs/jquery-mobile/jquery-mobile.min.js"></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <title>Bernadete Revenderora</title>
 
-   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-
-   <script>
-      $.mobile.loading("hide");
-      $.mobile.loading().hide();
-      $(document).ready(function() {
-         $("#carousel-produtos").swiperight(function() {
-            $(this).carousel('prev');
-         });
-         $("#carousel-produtos").swipeleft(function() {
-            $(this).carousel('next');
-         });
-         $("#closeModalTouch").tap(function() {
-            $("#modalPicture").modal("hide");
-         });
-      });
-   </script>
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-   <!-- MODAL AREA -->
-   <div class="modal fade" id="modalPicture" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-      <div class="modal-dialog">
-         <div class="modal-content">
-            <div class="modal-header">
-               <div id="closeModalTouch">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-               </div>
-               <h4 class="modal-title" id="">Bernadete Azevedo Serra</h4>
-            </div>
-            <div class="modal-body">
-               <img src="image/bel.jpg" class="modalImage" />
-            </div>
-         </div>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Bernadete Serra</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#produto">Produtos</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
+          </li>
+        </ul>
       </div>
-   </div>
+    </div>
+  </nav>  
 
-   <!-- END MODAL AREA -->
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio masthead" id="produto">
+    <div class="container">
 
-   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand navbar-brand-logo" href="#" style="padding:5px;" data-toggle="modal" data-target="#modalPicture">
-               <div class="logo">
-                  <img src="image/bel.jpg" width="40px" height="40px" class="logo" />
-               </div>
-            </a>
-         </div>
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Produtos</h2>
 
-         <!-- Collect the nav links, forms, and other content for toggling -->
-         <div class="collapse navbar-collapse" id="navbar">
-            <ul class="nav navbar-nav">
-               <li class="active"><a href="#headerTitle" class="fa fa-home">Inicial</a></li>
-               <li>
-                  <!--<a href="#section2">Sobre</a>-->
-               </li>
-
-            </ul>
-
-         </div>
-         <!-- /.navbar-collapse -->
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
       </div>
-      <!-- /.container-fluid -->
-   </nav>
 
-   <div class="jumbotron" id="headerTitle">
-      <h1 data-toggle="modal" data-target="#modalPicture" style="cursor:pointer;">Bernadete Azevedo</h1>
-      <p>Revendedora</p>
-      <a href="mailto:beraz.serra@gmail.com">
-         <span class="label label-success fa fa-envelope">
-            beraz.serra@gmail.com
-         </span>
-      </a>
-      <span class="label label-warning fa fa-building"> Salvador/ba</span>
-   </div>
+      <!-- Portfolio Grid Items -->
+      <div class="row">
 
-   <div id="section1" class="container-fluid">
-      <div id="carousel-produtos" class="carousel slide" data-ride="carousel">
-         <!-- Indicators -->
-         <ol class="carousel-indicators">
-            <li data-target="#carousel-produtos" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-produtos" data-slide-to="1"></li>
-            <li data-target="#carousel-produtos" data-slide-to="2"></li>
-            <li data-target="#carousel-produtos" data-slide-to="3"></li>
-         </ol>
-
-         <!-- Wrapper for slides -->
-         <div class="carousel-inner">
-            <div class="item active">
-               <a href="https://www.revistanatura.com.br/" target="_blank">
-                  <img src="image/natura.jpg" class="img-responsive" alt="">
-                  <div class="carousel-caption">
-                     <h3>Natura</h3>
-                     <p>Cosméticos e Tratamento para o corpo</p>
-                  </div>
-               </a>
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/natura.jpg" alt="">
+          </div>
+        </div>
 
-            <div class="item">
-               <a href="http://www.avon.com.br/folheto-virtual" target="_blank">
-                  <img src="image/avon.jpg" class="img-responsive" alt="">
-                  <div class="carousel-caption">
-                     <h3>Avon</h3>
-                     <p>Cosméticos</p>
-                  </div>
-               </a>
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/demillus.jpg" alt="">
+          </div>
+        </div>
 
-            <div class="item">
-               <a href="http://demillus.vestemuitomelhor.com.br/revista-digital" target="_blank">
-                  <img src="image/demillus.jpg" alt="">
-                  <div class="carousel-caption">
-                     <h3>Demillus</h3>
-                     <p>Moda íntima</p>
-                  </div>
-               </a>
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/avon.jpg" alt="">
+          </div>
+        </div>        
 
-         </div>
-
-         <!-- Controls -->
-         <a class="left carousel-control" href="#carousel-produtos" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-         </a>
-         <a class="right carousel-control" href="#carousel-produtos" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-         </a>
       </div>
-   </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+  
+  <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+  </div>
 
 
-   <div id="section2" class="container-fluid">
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
 
-   </div>
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contato</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form action="https://formspree.io/beraz.serra@gmail.com" method="POST">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Nome</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Digite seu nome" required="required" data-validation-required-message="Digite seu nome.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>            
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Assunto</label>
+                <input class="form-control" id="phone" type="text" placeholder="Digite o assunto do contato" required="required" data-validation-required-message="Digite o assunto do contato.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>E-mail</label>
+                <input class="form-control" id="email" type="email" name="_replyto" placeholder="Digite seu e-mail de contato" required="required" data-validation-required-message="Digite seu e-mail de contato.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Mensagem</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="O que deseja conversar comigo?" required="required" data-validation-required-message="Digite o que deseja conversar comigo."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-12 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Localização</h4>
+          <p class="lead mb-0">Salvador, Bahia
+            <a href="mailto:beraz.serra@gmail.com"><br>beraz.serra@gmail.com</p></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small></small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Natura</h2>
+                <h3 class="text-secondary text-uppercase mb-0">Cosméticos</h3>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="https://www.revistanatura.com.br/" target="_blank">
+                  <img class="img-fluid rounded mb-5" src="img/portfolio/natura.jpg" alt="Natura">
+                </a>
+                <a class="btn btn-primary" href="https://www.revistanatura.com.br/" target="_blank">
+                  <i class="fas fa-book fa-fw"></i>
+                  Acessar Revista
+                </a>
+                <button class="btn btn-secondary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Avon</h2>
+                <h3 class="text-secondary text-uppercase mb-0">Cosméticos e Moda da Casa</h3>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="http://www.avon.com.br/folheto-virtual" target="_blank">
+                  <img class="img-fluid rounded mb-5" src="img/portfolio/avon.jpg" alt="">
+                </a>
+                <a class="btn btn-primary" href="http://www.avon.com.br/folheto-virtual" target="_blank">
+                  <i class="fas fa-book fa-fw"></i>
+                  Acessar Revista
+                </a>
+                <button class="btn btn-secondary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Demillus</h2>
+                <h3 class="text-secondary text-uppercase mb-0">Moda Íntima</h3>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="http://demillus.vestemuitomelhor.com.br/revista-digital" target="_blank">
+                  <img class="img-fluid rounded mb-5" src="img/portfolio/demillus.jpg" alt="">
+                </a>
+                <a class="btn btn-primary" href="http://demillus.vestemuitomelhor.com.br/revista-digital" target="_blank">
+                  <i class="fas fa-book fa-fw"></i>
+                  Acessar Revista
+                </a>
+                <button class="btn btn-secondary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
 
 </body>
 
